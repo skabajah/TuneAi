@@ -8,7 +8,7 @@
   <meta name="date" content="2026-08-31" />
   <meta name="license" content="All Rights Reserved" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <link rel="icon" href="./icons/icon128.svg" type="image/png" />
+  <link rel="icon" href="./icons/icon128.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="website.css" />
   <title>TuneAi</title>
 </head>
@@ -22,6 +22,14 @@
       <h1>TuneAi</h1>
     </div>
     <p class="subtitle">Insert tone personas into AI chat platforms with a sleek sidebar interface.</p>
+
+    <!-- Chrome Web Store Badge & Link -->
+    <div style="text-align: center; margin: 24px 0 32px 0;">
+      <a href="https://chromewebstore.google.com/detail/deep-seek-tone-changer/iajjfgjjhklllackjkbkhjdmfddmdobb" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #2a2a2a; color: #d4d4d4; padding: 12px 24px; border-radius: 6px; text-decoration: none; border: 1px solid #444; font-family: 'Courier New', monospace; font-size: 14px; transition: background 0.2s;">
+        <span class="material-icons" style="vertical-align: middle; font-size: 18px; margin-right: 8px;">extension</span>
+        Available on the Chrome Web Store
+      </a>
+    </div>
 
     <!-- Badges -->
     <div class="badge-row">
@@ -80,170 +88,6 @@
         </div>
       </div>
     </div>
-
-    <hr class="divider" />
-
-    <!-- Installation -->
-    <h2>
-      <span class="material-icons section-icon">download</span>
-      Installation
-    </h2>
-
-    <h3>From Source</h3>
-    <pre><code>git clone &lt;repository-url&gt;
-cd tune-ai</code></pre>
-
-    <ol>
-      <li>Open Chrome and go to <code>chrome://extensions/</code></li>
-      <li>Enable <strong>Developer mode</strong> (top right)</li>
-      <li>Click <strong>Load unpacked</strong></li>
-      <li>Select the extension folder</li>
-    </ol>
-
-    <h3>Icon Files</h3>
-    <p>Add your icons to the <code>icons/</code> folder:</p>
-    <ul>
-      <li><code>icon16.png</code> (16x16)</li>
-      <li><code>icon48.png</code> (48x48)</li>
-      <li><code>icon128.svg</code> (128x128)</li>
-    </ul>
-
-    <hr class="divider" />
-
-    <!-- Structure -->
-    <h2>
-      <span class="material-icons section-icon">folder</span>
-      Project Structure
-    </h2>
-    <pre><code>tune-ai/
-├── manifest.json          # Extension configuration
-├── background.js          # Service worker
-├── sidepanel/
-│   ├── sidepanel.html     # Sidebar UI
-│   ├── sidepanel.css      # Sidebar styles
-│   └── sidepanel.js       # Sidebar logic
-├── content/
-│   ├── content.js         # Page injection
-│   └── content.css        # Injection styles
-├── utils/
-│   └── storage.js         # Storage helpers
-├── website/
-│   ├── index.html         # This file
-│   ├── privacy.html       # Privacy policy
-│   └── website.css        # Website styles
-├── icons/                 # Extension icons
-└── LICENSE</code></pre>
-
-    <hr class="divider" />
-
-    <!-- Usage -->
-    <h2>
-      <span class="material-icons section-icon">play_circle</span>
-      Usage
-    </h2>
-    <ol>
-      <li>Navigate to a supported AI chat platform</li>
-      <li>Click the extension icon in your toolbar</li>
-      <li>Toggle platforms on/off as needed</li>
-      <li>Click <strong>Insert</strong> on any persona to add it to the chat input</li>
-      <li>Use <code>Ctrl+1-5</code> for quick insertion</li>
-    </ol>
-
-    <hr class="divider" />
-
-    <!-- Configuration -->
-    <h2>
-      <span class="material-icons section-icon">settings</span>
-      Configuration
-    </h2>
-
-    <h3>Local Llama</h3>
-    <ul>
-      <li>Default port: <code>9931</code></li>
-      <li>Click the refresh icon next to the port field to reset to default</li>
-      <li>Port changes persist across sessions</li>
-    </ul>
-
-    <h3>Supported Platforms</h3>
-    <ul>
-      <li>DeepSeek</li>
-      <li>ChatGPT</li>
-      <li>Gemini</li>
-      <li>Claude</li>
-      <li>Local Llama (customizable port)</li>
-    </ul>
-
-    <hr class="divider" />
-
-    <!-- Development -->
-    <h2>
-      <span class="material-icons section-icon">code</span>
-      Development
-    </h2>
-
-    <h3>Files &amp; Responsibilities</h3>
-    <table>
-      <thead>
-        <tr>
-          <th>File</th>
-          <th>Purpose</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><code>manifest.json</code></td>
-          <td>Extension config, permissions</td>
-        </tr>
-        <tr>
-          <td><code>background.js</code></td>
-          <td>Icon click handling, tab management</td>
-        </tr>
-        <tr>
-          <td><code>content/content.js</code></td>
-          <td>Injects sidebar, handles text insertion</td>
-        </tr>
-        <tr>
-          <td><code>content/content.css</code></td>
-          <td>Sidebar positioning &amp; backdrop</td>
-        </tr>
-        <tr>
-          <td><code>sidepanel/sidepanel.html</code></td>
-          <td>UI structure</td>
-        </tr>
-        <tr>
-          <td><code>sidepanel/sidepanel.css</code></td>
-          <td>All styles &amp; animations</td>
-        </tr>
-        <tr>
-          <td><code>sidepanel/sidepanel.js</code></td>
-          <td>Core logic: platforms, personas, storage</td>
-        </tr>
-        <tr>
-          <td><code>utils/storage.js</code></td>
-          <td>Chrome storage helpers</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <h3>Key Dependencies</h3>
-    <ul>
-      <li>Google Material Icons (loaded via CDN)</li>
-      <li>Chrome Extension APIs</li>
-    </ul>
-
-    <hr class="divider" />
-
-    <!-- Built With -->
-    <h2>
-      <span class="material-icons section-icon">build</span>
-      Built With
-    </h2>
-    <ul>
-      <li>Chrome Extension Manifest V3</li>
-      <li>Vanilla JavaScript</li>
-      <li>CSS3 (transitions, animations)</li>
-      <li>Chrome Storage API</li>
-    </ul>
 
     <hr class="divider" />
 
