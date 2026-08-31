@@ -338,18 +338,20 @@ a {color: white;}
   align-items: center;
   gap: 8px;
   background: #2a2a2a;
-  color: #d4d4d4;
+  color: #ffffff;
   padding: 12px 24px;
-  border-radius: 6px;
+  border-radius: 8px;
   text-decoration: none;
   border: 1px solid #444;
   font-family: 'Courier New', monospace;
   font-size: 14px;
+  font-weight: bold;
   transition: background 0.2s;
+  background: #a4474c;
 }
 
 .btn-store:hover {
-  background: #3a3a3a;
+  background: #cf4048;
 }
 
 .btn-icon {
