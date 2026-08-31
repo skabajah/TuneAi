@@ -12,6 +12,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: monospace;
 }
 
 :root {
@@ -122,6 +123,7 @@ h1::after {
   margin-bottom: 32px;
   padding-bottom: 16px;
   border-bottom: 1px solid var(--border-light);
+  justify-content: space-evenly;
 }
 
 .badge {
@@ -415,7 +417,7 @@ table td {
 /* ===== CHROME STORE BUTTON ===== */
 .chrome-store-wrapper {
   text-align: center;
-  margin: 8px 0 24px 0;
+  margin: 4rem auto;
 }
 
 .btn-store {
