@@ -201,6 +201,10 @@ pre code {
   color: #888888;
 }
 
+.feature-icon {
+    font-size: 3rem !important;
+}
+
 /* ===== TABLES ===== */
 table {
   width: 100%;
@@ -361,7 +365,3 @@ a {color: white;}
   flex-shrink: 0;
 }
 
-/*.btn-chrome {*/
-  /* Any Chrome-specific styles can go here */
-  /*background: src('https://cdn.simpleicons.org/googlechrome/white');*/
-/*}*/
