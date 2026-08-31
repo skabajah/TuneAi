@@ -326,3 +326,40 @@ table td {
 }
 
 a {color: white;}
+
+/* chrome */ 
+.chrome-store-wrapper {
+  text-align: center;
+  margin: 24px 0 32px 0;
+}
+
+.btn-store {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #2a2a2a;
+  color: #d4d4d4;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  border: 1px solid #444;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.btn-store:hover {
+  background: #3a3a3a;
+}
+
+.btn-icon {
+  width: 18px;
+  height: 18px;
+  display: block;
+  flex-shrink: 0;
+}
+
+/*.btn-chrome {*/
+  /* Any Chrome-specific styles can go here */
+  /*background: src('https://cdn.simpleicons.org/googlechrome/white');*/
+/*}*/
