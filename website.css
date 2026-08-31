@@ -184,6 +184,17 @@ h2:first-of-type {
   color: var(--gold);
 }
 
+.section-div a {
+  padding: 4px 12px;
+  border-radius: 12px;
+  background: var(--gold);
+}
+.section-div a:hover {
+  background: var(--dark-gray);
+}
+
+
+
 h3 {
   font-family: 'Montserrat', sans-serif;
   font-size: 0.8rem;
@@ -195,7 +206,7 @@ h3 {
 }
 
 p {
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   color: var(--text-muted);
   margin-bottom: 12px;
   font-weight: 300;
@@ -333,6 +344,8 @@ table td {
   border-top: 1px solid var(--border-light);
   margin: 40px 0;
 }
+
+
 
 /* ===== FOOTER ===== */
 .footer-note {
