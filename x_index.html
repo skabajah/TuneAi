@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Shadi Kabajah" />
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="website.css" />
+
+    <meta name="author" content="Shadi Kabajah" />
   <meta name="version" content="3.0" />
   <meta name="date" content="2026-08-31" />
-  <meta name="license" content="All Rights Reserved" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <link rel="icon" href="./icons/icon128.svg" type="image/png" />
-  <link rel="stylesheet" href="website.css" />
-  <title>TuneAi</title>
+    <title>TuneAi</title>
+
+
 </head>
 <body>
 
@@ -18,14 +19,14 @@
 
     <!-- Header -->
     <div class="header">
-      <img src="./icons/icon128.svg" alt="TuneAi" width="36" height="36" style="filter: invert(0.6);" />
-      <h1>TuneAi</h1>
+      <span class="material-icons header-icon">psychology</span>
+      <h1>AI Tone Changer</h1>
     </div>
     <p class="subtitle">Insert tone personas into AI chat platforms with a sleek sidebar interface.</p>
 
     <!-- Badges -->
     <div class="badge-row">
-      <span class="badge primary">v3.0</span>
+      <span class="badge primary">v2.0</span>
       <span class="badge success">Chrome Extension</span>
       <span class="badge warning">Manifest V3</span>
       <span class="badge">All Rights Reserved</span>
@@ -91,7 +92,7 @@
 
     <h3>From Source</h3>
     <pre><code>git clone &lt;repository-url&gt;
-cd tune-ai</code></pre>
+cd ai-tone-v2</code></pre>
 
     <ol>
       <li>Open Chrome and go to <code>chrome://extensions/</code></li>
@@ -105,7 +106,7 @@ cd tune-ai</code></pre>
     <ul>
       <li><code>icon16.png</code> (16x16)</li>
       <li><code>icon48.png</code> (48x48)</li>
-      <li><code>icon128.svg</code> (128x128)</li>
+      <li><code>icon128.png</code> (128x128)</li>
     </ul>
 
     <hr class="divider" />
@@ -115,24 +116,23 @@ cd tune-ai</code></pre>
       <span class="material-icons section-icon">folder</span>
       Project Structure
     </h2>
-    <pre><code>tune-ai/
+    <pre><code>ai-tone-v2/
 ├── manifest.json          # Extension configuration
 ├── background.js          # Service worker
-├── sidepanel/
-│   ├── sidepanel.html     # Sidebar UI
-│   ├── sidepanel.css      # Sidebar styles
-│   └── sidepanel.js       # Sidebar logic
+├── sidebar/
+│   ├── sidebar.html       # Sidebar UI
+│   ├── sidebar.css        # Sidebar styles
+│   └── sidebar.js         # Sidebar logic
 ├── content/
 │   ├── content.js         # Page injection
 │   └── content.css        # Injection styles
 ├── utils/
 │   └── storage.js         # Storage helpers
 ├── website/
-│   ├── index.html         # This file
+│   ├── README.html        # This file
 │   ├── privacy.html       # Privacy policy
 │   └── website.css        # Website styles
-├── icons/                 # Extension icons
-└── LICENSE</code></pre>
+└── icons/                 # Extension icons</code></pre>
 
     <hr class="divider" />
 
@@ -207,15 +207,15 @@ cd tune-ai</code></pre>
           <td>Sidebar positioning &amp; backdrop</td>
         </tr>
         <tr>
-          <td><code>sidepanel/sidepanel.html</code></td>
+          <td><code>sidebar/sidebar.html</code></td>
           <td>UI structure</td>
         </tr>
         <tr>
-          <td><code>sidepanel/sidepanel.css</code></td>
+          <td><code>sidebar/sidebar.css</code></td>
           <td>All styles &amp; animations</td>
         </tr>
         <tr>
-          <td><code>sidepanel/sidepanel.js</code></td>
+          <td><code>sidebar/sidebar.js</code></td>
           <td>Core logic: platforms, personas, storage</td>
         </tr>
         <tr>
@@ -240,7 +240,7 @@ cd tune-ai</code></pre>
     </h2>
     <ul>
       <li>Chrome Extension Manifest V3</li>
-      <li>Vanilla JavaScript</li>
+      <li>Vanilla JavaScript (ES Modules)</li>
       <li>CSS3 (transitions, animations)</li>
       <li>Chrome Storage API</li>
     </ul>
@@ -277,8 +277,8 @@ cd tune-ai</code></pre>
 
     <!-- Footer -->
     <div class="footer-note">
-      <img src="./icons/icon128.svg" alt="TuneAi" width="20" height="20" style="filter: invert(0.6);" />
-      <span>TuneAi v3.0 — Shadi Kabajah</span>
+      <span class="material-icons footer-icon">psychology</span>
+      <span>AI Tone Changer v2.0</span>
     </div>
 
   </div>
