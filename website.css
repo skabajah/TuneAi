@@ -42,8 +42,8 @@ body {
 }
 
 h1 {
-  font-size: 32px;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: bolder;
   color: #e8e8e8;
 }
 
@@ -94,8 +94,8 @@ h1 {
 
 /* ===== SECTION HEADERS ===== */
 h2 {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: bold;
   color: #e8e8e8;
   margin-top: 32px;
   margin-bottom: 12px;
