@@ -114,5 +114,5 @@ See the [Privacy Policy](https://skabajah.github.io/TuneAi/privacy.html) for ful
 * **Author:** [Shadi Kabajah](https://skabajah.github.io/)
 * **Version:** 3.0
 * **Date:** 2026-08-31
-* **License:** All Rights Reserved. This software is proprietary and confidential. Unauthorized copying, modification, distribution, or use of this software is strictly prohibited. See the [LICENSE](https://skabajah.github.io/TuneAi/LICENSE) file for full details.
+* **License:** All Rights Reserved. This software is proprietary and confidential. Unauthorized copying, modification, distribution, or use of this software is strictly prohibited. See the [LICENSE](https://github.com/skabajah/TuneAi?tab=License-1-ov-file) file for full details.
  
